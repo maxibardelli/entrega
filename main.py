@@ -23,8 +23,8 @@ except:
 def vaciar():
     vaciar=("")
     producto.set(vaciar)
-    precio.set(vaciar)
-    stock.set(vaciar)
+    precio.set(0)
+    stock.set(0)
 def alta(producto,precio,tree,stock):
     cadena_producto = producto
     patron_producto="^[A-Za-záéíóú1-9ñÑ0.,\s\*]*$" #USAR LA "x" COMO SIMBOLO DE MULTIPICAR
