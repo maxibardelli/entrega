@@ -40,9 +40,9 @@ def alta(producto,precio,tree,stock):
                 my_base.commit()
                 actualizar_treeview(tree)
                 showinfo(title="ALTA",message="Alta Exitosa")
+                vaciar()
             else:
                 showinfo(title="ALTA",message="Alta Cancelada")    
-            vaciar()
         else:
             showerror(title="ERROR AL VALIDAR", message="ERROR EN EL CAMPO DESCIPCION")
     else:
