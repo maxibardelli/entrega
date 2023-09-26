@@ -79,7 +79,7 @@ def baja(tree):
     vaciar()
 def modificar(tree,producto,precio,stock):
     cadena = producto
-    patron="^[A-Za-záéíóú1-9ñÑ0.,\s\*]*$"     #USAR LA "x" COMO SIMBOLO DE MULTIPICAR    
+    patron="^[A-Za-záéíóú1-9ñÑ0.,\s\*]*$" 
     if(re.match(patron,cadena)):
         if askyesno("MODIFICAR",f"decea modificar: {producto} ${precio} {stock}"):
             select=tree.selection()
